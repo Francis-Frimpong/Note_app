@@ -44,22 +44,9 @@ function addNote (e) {
     //add cards to the parent container
     document.querySelector('.container').appendChild(cardDiv);
 
-    clearField()
-    
+    clearField();   
 
 }
-                // <div class="card">
-                // <h3 class="card-title">My notes</h3>
-                // <p class="notes">
-                //     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                //      Non veritatis dicta neque sequi commodi necessitatibus 
-                //      dolorum natus ratione nulla recusandae illum fugit perferendis, 
-                //      debitis excepturi tempore odio culpa adipisci aliquam.
-                // </p>
-                // <div class="card-buttons">
-                //     <button class="view-btn">View</button>
-                //     <button class="delete-btn">Delete</button>
-                // </div>
 
 function deleteNote(e) {
     if (e.target.classList.contains('delete-btn')){
