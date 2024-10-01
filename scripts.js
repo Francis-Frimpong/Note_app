@@ -5,8 +5,16 @@ const formField = document.querySelector('.form-field');
 function addNote (e) {
     e.preventDefault();
 
-    const title = document.querySelector('.title').value;
-    const note = document.querySelector('.notes').value;
+    const title = document.querySelector('.title').value.trim();
+    const note = document.querySelector('.notes').value.trim();
+    
+
+
+
+    
+
+    
+    
 
     //creating the card
     const cardDiv = document.createElement('div');

@@ -6,9 +6,10 @@
 
 /* To center the container */
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
-    gap: 20px; /* Adjust the spacing between cards */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .card {
@@ -79,7 +80,7 @@ button[type="submit"]:hover {
     margin-bottom: 20px; /* Add space below the header */
 }
 
-form, .container {
+form, .container{
     width: 100%; /* Set the width to 100% of the parent container */
     max-width: 600px; /* Max width to prevent it from being too wide */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
@@ -98,7 +99,9 @@ form, .container {
     -webkit-line-clamp: 3; /* Number of lines to display (adjust as needed) */
     -webkit-box-orient: vertical;
     white-space: normal; /* Ensure text wraps within the lines */
+
 }
+
 
 /* Container for the buttons inside the card */
 .card-buttons {
